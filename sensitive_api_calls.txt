@@ -1,0 +1,80 @@
+AccessibilityService|BIND_ACCESSIBILITY_SERVICE, USE_FINGERPRINT|Accessibility services should only be used to assist users with disabilities in using Android devices and apps. They run in the background and receive callbacks by the system when AccessibilityEvents are fired. Such events denote some state transition in the user interface, for example, the focus has changed, a button has been clicked, etc. Such a service can optionally request the capability for querying the content of the active window. Development of an accessibility service requires extending this class and implementing its abstract methods.
+AccountManager|GET_ACCOUNTS,MANAGE_ACCOUNTS, AUTHENTICATE_ACCOUNTS, USE_CREDENTIALS|This class provides access to a centralized registry of the user's online accounts. Only needed on API level <=22
+DevicePolicyManager|BIND_DEVICE_ADMIN|Public interface for managing policies enforced on a device. To be supported, the receiver must also require the BIND_DEVICE_ADMIN permission so that other applications can not abuse it.
+DeviceAdminReceiver|BIND_DEVICE_ADMIN|Base class for implementing a device administration component. This class provides a convenience for interpreting the raw intent actions that are sent by the system.
+DeviceAdminService|BIND_DEVICE_ADMIN|Base class for a service that device owner/profile owners can optionally have.
+BackupManager|BACKUP|Convenience method for callers who need to indicate that some other package needs a backup pass. This can be useful in the case of groups of packages that share a uid.
+JobInfo.Builder|RECEIVE_BOOT_COMPLETED|Builder class for constructing JobInfo objects
+NetworkStatsManager|PACKAGE_USAGE_STATS|Provides access to network usage history and statistics
+StorageStatsManager|PACKAGE_USAGE_STATS|Access to detailed storage statistics
+UsageStatsManager|PACKAGE_USAGE_STATS|Provides access to device usage history and statistics. Usage data is aggregated into time intervals: days, weeks, months, and years.
+AppWidgetManager|BIND_APPWIDGET|Updates AppWidget state; gets information about installed AppWidget providers and other AppWidget related state
+BluetoothProfile|BLUETOOTH|Public APIs for the Bluetooth Profiles.
+BluetoothA2dp|BLUETOOTH|This class provides the public APIs to control the Bluetooth A2DP profile
+BluetoothAdapter|BLUETOOTH,BLUETOOTH_ADMIN|Represents the local device Bluetooth adapter
+BluetoothDevice|BLUETOOTH|Represents a remote Bluetooth device
+BluetoothGatt|BLUETOOTH|Public API for the Bluetooth GATT Profile.
+BluetoothHeadset|BLUETOOTH|Public API for controlling the Bluetooth Headset Service
+BluetoothHealth|BLUETOOTH|Public API for Bluetooth Health Profile
+BluetoothHidDevice|BLUETOOTH|Provides the public APIs to control the Bluetooth HID Device profile.
+BluetoothManager|BLUETOOTH|High level manager used to obtain an instance of an BluetoothAdapter and to conduct overall Bluetooth Management
+BluetoothServerSocket|BLUETOOTH|A listening Bluetooth socket.
+BluetoothSocket|BLUETOOTH|A connected or connecting Bluetooth socket
+AdvertisingSet|BLUETOOTH_ADMIN|This class provides a way to control single Bluetooth LE advertising instance.
+BluetoothLeAdvertiser|BLUETOOTH_ADMIN|This class provides a way to perform Bluetooth LE advertise operations, such as starting and stopping advertising
+BluetoothLeScanner|BLUETOOTH_ADMIN|This class provides methods to perform scan related operations for Bluetooth LE devices
+Camera|CAMERA|The Camera class is used to set image capture settings, start/stop preview, snap pictures, and retrieve frames for encoding for video
+TYPE_HEART_RATE|BODY_SENSORS|A constant describing a heart rate monitor
+CameraDevice|CAMERA|The CameraDevice class is a representation of a single camera connected to an Android device, allowing for fine-grain control of image capture and post-processing at high frame rates
+CameraManager|CAMERA|A system service manager for detecting, characterizing, and connecting to CameraDevices.
+VIRTUAL_DISPLAY_FLAG_AUTO_MIRROR|CAPTURE_VIDEO_OUTPUT,CAPTURE_SECURE_VIDEO_OUTPUT|Allows content to be mirrored on private displays when no content is being shown
+VIRTUAL_DISPLAY_FLAG_SECURE|CAPTURE_SECURE_VIDEO_OUTPUT|Create a secure display
+FingerprintDialog|USE_FINGERPRINT|A class that manages a system-provided fingerprint dialog
+FingerprintManager|USE_FINGERPRINT|A class that coordinates access to the fingerprint hardware
+LocationManager|ACCESS_COARSE_LOCATION,ACCESS_FINE_LOCATION|This class provides access to the system location services
+AudioManager|MODIFY_AUDIO_SETTINGS|AudioManager provides access to volume and ringer mode control
+MediaController|MEDIA_CONTENT_CONTROLLER|Allows an app to interact with an ongoing media session
+TvInputService|BIND_TV_INPUT|The TvInputService class represents a TV input or source such as HDMI or built-in tuner which provides pass-through video or broadcast TV programs
+ConnectivityManager|ACCESS_NETWORK_STATE,CHANGE_NETWORK_STATE|Class that answers queries about the state of network connectivity
+VpnService|BIND_VPN_SERVICE|VpnService is a base class for applications to extend and build their own VPN solutions
+AudioGroup|RECORD_AUDIO|An AudioGroup is an audio hub for the speaker, the microphone, and AudioStreams
+AudioStream|INTERNET|An AudioStream is a RtpStream which carrys audio payloads over Real-time Transport Protocol (RTP)
+RtpStream|INTERNET|RtpStream represents the base class of streams which send and receive network packets with media payloads over Real-time Transport Protocol
+SipAudioCall|INTERNET,USE_SIP,RECORD_AUDIO,ACCESS_WIFI_STATE,WAKE_LOCK|Handles an Internet audio call over SIP
+SipManager|INTERNET,USE_SIP|Provides APIs for SIP tasks, such as initiating SIP connections, and provides access to related SIP services
+WifiManager|NETWORK_SETTINGS,ACCESS_WIFI_STATE,CHANGE_WIFI_STATE,ACCESS_COARSE_LOCATION,ACCESS_FINE_LOCATION,INTERNET,CHANGE_WIFI_MULTICAST_STATE|This class provides the primary API for managing all aspects of Wi-Fi connectivity
+WifiAwareManager|ACCESS_COARSE_LOCATION,ACCESS_WIFI_STATE,CHANGE_WIFI_STATE|This class provides the primary API for managing Wi-Fi Aware operations: discovery and peer-to-peer data connections
+WifiAwareSession|ACCESS_COARSE_LOCATION,ACCESS_WIFI_STATE,CHANGE_WIFI_STATE|This class represents a Wi-Fi Aware session - an attachment to the Wi-Fi Aware service through which the app can execute discovery operations
+WifiP2pManager|ACCESS_WIFI_STATE,CHANGE_WIFI_STATE|This class provides the API for managing Wi-Fi peer-to-peer connectivity
+WifiRttManager|ACCESS_WIFI_STATE,CHANGE_WIFI_STATE,ACCESS_COARSE_LOCATION|This class provides the primary API for measuring distance (range) to other devices using the IEEE 802.11mc Wi-Fi Round Trip Time (RTT) technology
+NfcAdapter|NFC|Represents the local NFC adapter.
+CardEmulation|NFC|This class can be used to query the state of NFC card emulation services
+HostApduService|BIND_NFC_SERVICE|HostApduService is a convenience Service class that can be extended to emulate an NFC card inside an Android service component.
+HostNfcFService|BIND_NFC_SERVICE|HostNfcFService is a convenience Service class that can be extended to emulate an NFC-F card inside an Android service component
+OffHostApduService|BIND_NFC_SERVICE|OffHostApduService is a convenience Service class that can be extended to describe one or more NFC applications that are residing off-host, for example on an embedded secure element or a UICC
+IsoDep|NFC|Provides access to ISO-DEP (ISO 14443-4) properties and I/O operations on a Tag.
+MifareClassic|NFC|Provides access to MIFARE Classic properties and I/O operations on a Tag
+MifareUltralight|NFC|Provides access to MIFARE Ultralight properties and I/O operations on a Tag.
+Ndef|NFC|Provides access to NDEF content and operations on a Tag.
+NdefFormatable|NFC|Provide access to NDEF format operations on a Tag.
+NfcA|NFC|Provides access to NFC-A (ISO 14443-3A) properties and I/O operations on a Tag.
+NfcB|NFC|Provides access to NFC-B (ISO 14443-3B) properties and I/O operations on a Tag
+NfcF|NFC|Provides access to NFC-F (JIS 6319-4) properties and I/O operations on a Tag.
+NfcV|NFC|Provides access to NFC-V (ISO 15693) properties and I/O operations on a Tag.
+StorageVolume|READ_EXTERNAL_STORAGE,WRITE_EXTERNAL_STORAGE|formation about a shared/external storage volume for a specific user.
+CarrierMessagingService|BIND_CARRIER_SERVICES|A service that receives calls from the system when new SMS and MMS are sent or received
+CarrierService|BIND_CARRIER_SERVICES|A service that exposes carrier-specific functionality to the system
+DreamService|BIND_DREAM_SERVICE|Extend this class to implement a custom dream (available to the user as a "Daydream")
+NotificationListenerService|BIND_NOTIFICATION_LISTENER_SERVICE|A service that receives calls from the system when new notifications are posted or removed, or their ranking changed
+VoiceInteractionService|BIND_VOICE_INTERACTION|Top-level service of the current global voice interactor, which is providing support for hotwording, the back-end of a VoiceInteractor, etc.
+VrListenerService|BIND_VR_LISTENER_SERVICE|A service that is bound from the system while running in VR mode
+WallpaperService|BIND_WALLPAPER|A wallpaper service is responsible for showing a live wallpaper behind applications that would like to sit on top of it
+SpeechRecognizer|RECORD_AUDIO|This class provides access to the speech recognition service
+CallScreeningService|BIND_SCREENING_SERVICE|This service can be implemented by the default dialer (see getDefaultDialerPackage()) to allow or disallow incoming calls before they are shown to a user
+ConnectionService|BIND_TELECOM_CONNECTION_SERVICE|An abstract service that should be implemented by any apps which either:    Can make phone calls (VoIP or otherwise) and want those calls to be integrated into the built-in phone app. Referred to as a system managed ConnectionService.  Are a standalone calling app and don't want their calls to be integrated into the built-in phone app. Referred to as a self managed ConnectionService.
+InCallService|BIND_INCALL_SERVICE|This service is implemented by any app that wishes to provide the user-interface for managing phone calls
+TelecomManager|MODIFY_PHONE_STATE,ANSWER_PHONE_CALLS,READ_PHONE_STATE,CALL_PHONE,MANAGE_OWN_CALLS|This service is implemented by any app that wishes to provide the user-interface for managing phone calls
+CarrierConfigManager|READ_PHONE_STATE|Provides access to telephony configuration values that are carrier-specific
+SubscriptionManager|READ_PHONE_STATE|SubscriptionManager is the application interface to SubscriptionController and provides information about the current Telephony Subscriptions.
+TelephonyManager|READ_PHONE_STATE,SEND_RESPOND_VIA_MESSAGE,ACCESS_COARSE_LOCATION,ACCESS_FINE_LOCATION,READ_PRIVILEGED_PHONE_STATE,READ_SMS,READ_PHONE_NUMBERS,MODIFY_PHONE_STATE,ACCESS_NETWORK_STATE,CALL_PHONE,SEND_SMS|Provides access to information about the telephony services on the device
+VisualVoicemailService|BIND_VISUAL_VOICEMAIL_SERVICE|This service is implemented by dialer apps that wishes to handle OMTP or similar visual voicemails
