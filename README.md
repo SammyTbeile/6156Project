@@ -30,4 +30,4 @@ I manually compiled a list of classes that contain sensitive API calls (sensitiv
 The descriptions were extracted from the first sentence of the documentation. Feel free to update these as well with a pull request.
 
 If you choose to use your own list, the format is:
-<sensitive class>|<permission it uses>|<description>
+\<sensitive class\>|\<permission it uses\>|\<description\>
