@@ -54,10 +54,11 @@ def main():
         for name in os.listdir(default_path):
             source_files.append(default_path + name)
     else:
-        with open(argument.files, "r") as source_list:
-            for directory in soruce_list:
+        with open(arguments.files, "r") as source_list:
+            for directory in source_list:
                 for name in os.listdir(directory.strip()):
-                    source_files.append(directory.strip() + name)
+                    if(not Path(name).is_dir()):
+                        source_files.append(directory.strip() + name)
     print("We have detected the following source files: ")
     for s in source_files:
         print(s)
