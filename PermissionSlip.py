@@ -65,7 +65,7 @@ def main():
 
     # build dictionary of permissions
     permissions = dict()
-    with open(arguments.dictionary +"sensitive_api_calls.txt", "r") as perm_file:
+    with open(arguments.dictionary, "r") as perm_file:
         for line in perm_file:
             # structure of each line <class>|<permission>|<description>
             line_list = line.split("|")
