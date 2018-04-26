@@ -108,12 +108,12 @@ def main():
     # Output report of used permissions
     out_name = arguments.output
     with open(out_name, "w") as output:
-        output.write("# Report of Permission Usage:\n")
+        output.write("# Report of Permission Usage:\n\n")
         for permission in used_permissions:
             output.write("## " + str(permission) + ":\n")
             for c in used_permissions[permission]:
-                output.write("  - " + str(c) + "\n")
-                output.write("      Description: " + str(permissions[c]["description"]) + "\n")
+                output.write("  - " + str(c) + '\n')
+                output.write("      Description: " + str(permissions[c]["description"]) + "\n\n")
     print("Output written to: " + out_name)
 
 
