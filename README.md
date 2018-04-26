@@ -19,9 +19,15 @@ A run of the tool proceeds as follows:
 ## Usage
 The application can be used as follows:
 
+```
 python3 PermissionSlip.py [--manifest <path to manifest file>] [--files <file containing a list of source code directories>] [--dictionary <file containing list of permissions>] [--output <output file for the permissions report>]
+```
+
 or:
+
+```
 python3 PermissionSlip.py [-m] [-f] [-d] [-o]
+```
 
 The application assumes a simple default AndroidStudio layout by default. If your application adheres to this layout, you will not need to specify a manifest file (./app/src/main/AndroidManifest.xml is assumed) or a list of source code directories. If the sensitive_api_calls.txt file is in the same directory as the tool is run from, it need not be specified. By default, the output will be placed in a file called report.md in the same directory as the tool is run from.
 
