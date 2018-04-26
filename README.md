@@ -25,7 +25,7 @@ python3 PermissionSlip.py [-m] [-f] [-d] [-o]
 
 The application assumes a simple default AndroidStudio layout by default. If your application adheres to this layout, you will not need to specify a manifest file (./app/src/main/AndroidManifest.xml is assumed) or a list of source code directories. If the sensitive_api_calls.txt file is in the same directory as the tool is run from, it need not be specified. By default, the output will be placed in a file called report.md in the same directory as the tool is run from.
 
-##Sensitive API List
+## Sensitive API List
 I manually compiled a list of classes that contain sensitive API calls (sensitive_api_calls.txt). This list is probably not exhaustive as it was compiled manually and much of the Android documentation is incomplete. Feel free to add to it with a pull request!
 The descriptions were extracted from the first sentence of the documentation. Feel free to update these as well with a pull request.
 
