@@ -48,3 +48,14 @@ The descriptions were extracted from the first sentence of the documentation. Fe
 
 If you choose to use your own list, the format is:
 \<sensitive class\>|\<permission it uses\>|\<description\>
+
+## Sample Usage
+I have included the demo app provided from: https://github.com/codepath/intro_android_demo in the repository as a sample application. I have slightly modified it to request unneeded Bluetooth permissions.
+
+Assuming that the application is in a folder titled demo_app2 in the Permission Slip directory. It can be run as follows:
+
+[run]: https://github.com/SammyTbeile/PermissionSlip/blob/master/sample_usage.png "Example run"
+
+Note: the `-d` flag is used to specify a dictionary file from the directory above. Also the Bluetooth permission is listed as unneeded. The generated report is:
+
+[report]: https://github.com/SammyTbeile/PermissionSlip/blob/master/sample_report.png "Example report"
