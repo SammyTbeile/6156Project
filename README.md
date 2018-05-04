@@ -54,7 +54,7 @@ I have included the demo app provided from: https://github.com/codepath/intro_an
 
 Assuming that the application is in a folder titled demo_app2 in the Permission Slip directory. It can be run as follows:
 
-[run]: https://github.com/SammyTbeile/PermissionSlip/blob/master/sample_usage.png "Example run"
+![run]: https://github.com/SammyTbeile/PermissionSlip/blob/master/sample_usage.png "Example run"
 
 Note: the `-d` flag is used to specify a dictionary file from the directory above. Also the Bluetooth permission is listed as unneeded. The generated report is:
 
