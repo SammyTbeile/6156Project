@@ -58,4 +58,4 @@ Assuming that the application is in a folder titled demo_app2 in the Permission 
 
 Note: the `-d` flag is used to specify a dictionary file from the directory above. Also the Bluetooth permission is listed as unneeded. The generated report is:
 
-[report]: https://github.com/SammyTbeile/PermissionSlip/blob/master/sample_report.png "Example report"
+![report](https://github.com/SammyTbeile/PermissionSlip/blob/master/sample_report.png)
